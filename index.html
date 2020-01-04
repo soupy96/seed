@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Seed.com</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="banner">
+            <img src="images/esteban-lopez-s8BMxVXJiOg-unsplash.png" alt="cannabis plant">
+        </div>
+        <h1>seed<span>.com</span></h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">OUR PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#news">HOME</a>
+                <a href="#contact">ABOUT</a>
+                <a href="#about">OUR PRODUCTS</a>
+                <a href="#about">CONTACT</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="jar">
+            <img src="images/Side image.png" alt="jar of buds">
+        </div>
+        <div id="body">
+            <div id="greenbox">
+                <h2>About Seed.com</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt lacus. Integer a aliquet nisi, non molestie mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tincidunt lacus. Integer a aliquet nisi, non molestie mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <br>
+                <a id="readmore" class="hvr-pop" href="#">Read more</a>
+            </div>
+        </div>
+        <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+    </body>
+</html>

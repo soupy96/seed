@@ -1,0 +1,238 @@
+
+/*FONTS*/
+@font-face {
+    font-family: 'helveticaneuebold';
+    src: url('../fonts/helveticaneue/webfontkit-20191001-113845/helvetica_neu_bold-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue/webfontkit-20191001-113845/helvetica_neu_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneuethin';
+    src: url('../fonts/helveticaneue/webfontkit-20191001-113845/helveticaneue_thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue/webfontkit-20191001-113845/helveticaneue_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneueregular';
+    src: url('../fonts/helveticaneue/webfontkit-20191001-113845/helveticaneue-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue/webfontkit-20191001-113845/helveticaneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*TAGS*/
+body {
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'helveticaneuebold';
+    font-size: 6vw;
+    margin-top: -5.7vw;
+    margin-left: 10vw;
+    color: #ffffff;
+    width: 100%;
+}
+
+h1 span {
+    font-size: 4vw;
+}
+nav {
+    z-index: 999;
+    position: absolute;
+    margin-top: -7vw;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 55vw;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #005e20;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'helveticaneuebold';
+    letter-spacing: 3px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #B4d333;
+    color: #ffffff;
+}
+
+/*CLASSES AND IDS*/
+#banner {
+    width: 100%;
+    height: 15vw;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+}
+
+#jar {
+    width: 45%;
+    margin-top: -5.55vw;
+}
+
+#jar img {
+    width: 100%;
+    margin-left: 54.5vw;
+}
+
+#body {
+    width: 100%;
+    background-color: #D3D3D3;
+    margin-top: 0vw;
+    z-index: 999;
+    position: absolute;
+}
+
+#greenbox {
+    width: 45%;
+    margin-left: 10vw;
+    margin-bottom: 10vw;
+    margin-top: -11vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: #B4d333;
+    color: #ffffff;
+}
+
+#greenbox h2 {
+    font-family: 'helveticaneuebold';
+    font-size: 4vw;
+    margin: auto;
+}
+
+#greenbox p {
+    font-family: 'helveticaneueregular';
+    font-size: 1.5vw;
+    width: 80%;
+    line-height: 30px;
+}
+
+#readmore {
+    background-color: #005e20;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'helveticaneueregular';
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.35vw;
+}
+
+/* Pop animation*/
+@-webkit-keyframes hvr-pop {
+
+50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+}
+
+@keyframes hvr-pop {
+
+50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+}
+
+.hvr-pop {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+-webkit-animation-name: hvr-pop;
+animation-name: hvr-pop;
+-webkit-animation-duration: 0.3s;
+animation-duration: 0.3s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+/*BACK TO TOP*/
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out { 
+    opacity: .5;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
